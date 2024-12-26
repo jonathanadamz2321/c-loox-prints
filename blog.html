@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover tips, services, and portfolio pieces on photography and studio work at [Studio Name]. Explore our expert blog, tips, and resources for your next photography session.">
+  <title>C-loox prints media Photography Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      background-image: url(tool1.jpg);
+      background-repeat: no-repeat;
+      background-position:top;
+      background-size: cover;
+color: #000000;
+      height: 300px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-right: 50px;
+
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      justify-content: flex-end;
+      font-size: 2em;
+    }
+
+    .main-content {
+      padding: 30px;
+    }
+
+    .intro {
+      margin-bottom: 30px;
+      background-color: #808080;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+    background-color: #000000;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+    }
+
+    .blog-posts h2,
+    .services h2,
+    .portfolio h2,
+    .contact h2,
+    .social h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-align: center;
+      background-color: #000000;
+    }
+
+    .post, .service {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .post h3 a,
+    .service h3 a {
+      color: #222;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .read-more, .view-portfolio, .contact-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .read-more:hover, .view-portfolio:hover, .contact-button:hover {
+      background-color: #555;
+    }
+
+    .contact-info {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .contact-info li {
+      font-size: 1rem;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #222;
+    }
+
+    .social-links {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .social-links li {
+      margin-bottom: 10px;
+    }
+
+
+    .social-links a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 1.1rem;
+
+    }
+
+    .footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      width: 20px;
+      height: 20px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      width: 50px;
+      height: 30px
+    }
+    /* Footer position and styling */
+    .social-navbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    /* Style the list and remove bullets */
+    .social-icons {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Style the individual icon links */
+    .social-icon {
+        color: white;
+        font-size: 24px;
+        transition: color 0.3s ease;
+        text-decoration: none;
+    }
+
+    /* Add hover effect */
+    .social-icon:hover {
+        color: #00b0ff; /* Change to any color you like */
+    }
+
+    /* Customize icons for each platform (optional) */
+    .social-icon.whatsapp:hover { color: #25D366; }
+    .social-icon.facebook:hover { color: #1877F2; }
+    .social-icon.instagram:hover { color: #C13584; }
+    .social-icon.tiktok:hover { color: #69C9D0; }
+    .social-icon.youtube:hover { color: #FF0000; }
+    .social-icon.twitter:hover { color: #1DA1F2; }
+
+    nav div.logo img {
+      border-radius: 50%;
+      width:300px;
+      height:200px;
+    }
+    .social-links li:hover {
+    color: hsl(55,100%,50%);
+    font-size: 5px;
+    text-decoration: underline;
+    animation: shake 2s  infinite;
+    }
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+      20% {
+        transform: translateX(-10px);
+      }
+      40% {
+transform: translateX(10px);
+      }
+      60% {
+        transform: translateX(-10px);
+      }
+      80% {
+        transform: translateX(10px);
+      }
+      100%{
+        transform: translateX(0);
+      }
+    }
+
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo"><a href="#"><img src="cloox.png" alt="C-loox Prints Media"</a></div>
+      <ul class="nav-links">
+        <li><a href="home page.html">Home</a></li>
+
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="contact form.html">Contact</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="intro">
+      <h1>Welcome to C-loox Prints Media's Photography Blog!</h1>
+      <p>At C-loox Prints Media, we blend creativity with technical expertise to bring your photography visions to life. From portraits to product photography, our blog provides insights, tips, and inspiration for both our clients and fellow photographers.</p>
+      <p>Explore our latest posts, view stunning photography, and learn more about our services. Stay tuned for updates on new photography techniques, behind-the-scenes stories, and the art of visual storytelling!</p>
+    </section>
+
+    <section class="blog-posts">
+      <h2>Recent Blog Posts</h2>
+
+      <div class="post">
+        <h3><a href="/blog/portrait-photography-tips">The Art of Portrait Photography: Tips and Tricks</a></h3>
+        <p><em>Published on Fri/Dec/13</em></p>
+        <p>Capturing a compelling portrait is more than just snapping a photo. It’s about lighting, composition, and connecting with the subject. In this post, we share our expert tips to create portraits that tell a story...</p>
+        <a href="https://medium.com/@francesco.saviano87/mastering-the-art-of-portrait-photography-a-comprehensive-guide-26e5b71eccf4" class="read-more">Read More</a>
+      </div>
+
+      <div class="post">
+        <h3><a href="/blog/studio-shoot-preparation">How to Prepare for Your Next Studio Shoot</a></h3>
+        <p><em>Published on Fri/Dec/13</em></p>
+        <p>Wondering what to expect during your studio session? This blog post walks you through the entire process—from pre-shoot consultations to post-production—and shares how we ensure a smooth and enjoyable experience...</p>
+        <a href="https://www.denverheadshotco.com/tips-for-your-first-photoshoot/" class="read-more">Read More</a>
+      </div>
+
+      <div class="post">
+        <h3><a href="/blog/importance-of-lighting">The Importance of Lighting in Photography</a></h3>
+        <p><em>Published on Thur/Dec/12</em></p>
+        <p>Lighting is the heart of every photograph. In this post, we dive into various lighting techniques and how they can dramatically change the mood and tone of your images...</p>
+        <a href="https://www.kevinlj.com/importance-of-light-in-photography" class="read-more">Read more</A>
+
+      <div class="post">
+        <h3><a href="/blog/product-photography-tips">Tips for Product Photography: How to Make Your Items Stand Out</a></h3>
+        <p><em>Published on Tue/Dec/9</em></p>
+        <p>Great product photos are essential for boosting your e-commerce or marketing efforts. Here, we share tips on styling and shooting your products in a way that maximizes their appeal...</p>
+        <a href="https://www.erase.bg/blog/product-photography-tips" class="read-more">Read More</a>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2>Our Photography Services</h2>
+      <p>We offer a wide range of photography services tailored to your needs. Whether you're seeking professional portraits, stunning product photos, or event coverage, our team is here to help you create memorable images.</p>
+
+      <div class="service">
+        <h3><a href="/services/portrait-photography">Portrait Photography</a></h3>
+        <p>Whether you're looking for a corporate headshot or a creative portrait session, we make sure you look your best. Learn more about our portrait photography services.</p>
+        <a href="/services/portrait-photography" class="read-more">Learn More</a>
+      </div>
+
+      <div class="service">
+        <h3><a href="/services/event-photography">Event Photography</a></h3>
+        <p>From weddings to corporate events, we specialize in capturing the moments that matter most. Find out how we document your special occasions with care and artistry.</p>
+        <a href="/services/event-photography" class="read-more">Learn More</a>
+      </div>
+
+      <div class="service">
+        <h3><a href="/services/product-photography">Product Photography</a></h3>
+        <p>High-quality product photos can make a huge difference in marketing. See how we bring out the best in your products with professional photography that enhances your brand.</p>
+        <a href="/services/product-photography" class="read-more">Learn More</a>
+      </div>
+
+      <div class="service">
+        <h3><a href="/services/commercial-photography">Commercial Photography</a></h3>
+        <p>Let us help you tell your brand’s story through striking commercial images. Whether it’s for a website or an advertising campaign, we’re here to make your business shine.</p>
+        <a href="/services/commercial-photography" class="read-more">Learn More</a>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <h2>Our Portfolio</h2>
+      <p>Get inspired by our recent projects. From intimate portraits to large-scale commercial campaigns, our portfolio showcases the diverse range of photography we specialize in.</p>
+      <a href="portfolio.html" class="view-portfolio">View Portfolio</a>
+    </section>
+
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <p>Ready to book a session or have a question? We'd love to hear from you!</p>
+      <ul class="contact-info">
+        <li>Phone: <a href="tel:+256 701344086">+256 701344086</a></li>
+        <li>Email: <a href="mailto:primecodecrusader@gmail.com">primecodecrusader@gmail.com</a></li>
+        <li>Address: 123 Studio Lane, City, Country</li>
+      </ul>
+      <a href="contact form.html" class="contact-button">Contact Us</a>
+    </section>
+
+    <section class="social">
+      <h2>Follow Us on Social Media</h2>
+      <p>Stay updated with our latest blog posts, photography projects, and behind-the-scenes action.</p>
+      <ul class="social-links">
+        <li><a href="https://instagram.com/yourusername" target="_blank">Instagram</a></li>
+        <li><a href="https://wa.me/0701344086" target="_blank">WhatsApp</a></li>
+        <li><a href="https://youtube.com/@MultiCharles20" target="_blank">youtube</a></li>
+        <li><a href="https://tiktok.com/@clooxprints" target="_blank">Tiktok</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="social-navbar">
+<p>
+      <ul class="social-icons">
+          <li><a href="https://wa.me/0701344086" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="https://instagram.com/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://tiktok.com/@clooxprints" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://youtube.com/@MultiCharles20" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a></li>
+
+      </ul>
+
+  &copy; 2024 C-looks Print Media.All rights reserved.</p><br>
+  <p><a href="/terms">Terms & Conditions</a> | <a href="/privacy-policy">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>

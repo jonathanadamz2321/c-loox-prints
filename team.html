@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the team behind our photography studio.">
+  <title>About Us - Photography Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="team.css">
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home page.html">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="contact form.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="team-section">
+      <h1><marquee>Meet Our Team</marquee></h1>
+      <p>We are a group of passionate photographers and creatives, dedicated to capturing life's most precious moments. Here is a little more about us:</p>
+</section>
+<section class="member">
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+          <img src="c.jpeg" alt="John Doe" class="team-photo">
+          <h2>C-loox prints</h2>
+          <p class="role">Founder & Lead Photographer</p>
+          <p class="bio">John is an experienced photographer with over 10 years of experience in portrait and landscape photography. He loves to capture the beauty in everyday moments.</p>
+          <button onclick="showGallery(1)">Like</button>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-member">
+          <img src="jane.jpeg" alt="Jane Smith" class="team-photo">
+          <h2>Jane Smith</h2>
+          <p class="role">Studio Manager</p>
+          <p class="bio">Jane oversees the day-to-day operations of the studio, ensuring everything runs smoothly. She has a keen eye for design and client relations.</p>
+          <button onclick="showGallery(2)">Like</button>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-member">
+          <img src="alex.jpeg" alt="Alex Johnson" class="team-photo">
+          <h2>Alex Johnson</h2>
+          <p class="role">Photographer & Editor</p>
+          <p class="bio">Alex specializes in photo editing and post-production. His eye for detail ensures that every shot is perfected before delivery to clients.</p>
+          <button onclick="showGallery(3)">Like</button>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-member">
+          <img src="davis.jpeg" alt="Emily Davis" class="team-photo">
+          <h2>Emily Davis</h2>
+          <p class="role">Assistant Photographer</p>
+          <p class="bio">Emily assists with on-location shoots and is responsible for setting up lighting and camera equipment. She is passionate about capturing candid moments.</p>
+          <button onclick="showGallery(4)">Like</button>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div class="team-member">
+          <img src="chris.jpeg" alt="Chris Lee" class="team-photo">
+          <h2>Chris Lee</h2>
+          <p class="role">Marketing & Communications</p>
+          <p class="bio">Chris handles the marketing and online presence for the studio. His expertise in digital marketing ensures that our work reaches a wider audience.</p>
+          <button onclick="showGallery(5)">Like</button>
+        </div>
+        <!--team member 6-->
+        <div class="team-member">
+          <img src="john.jpeg" alt="Alex Johnson" class="team-photo">
+          <h2>kato jonathan</h2>
+          <p class="role">studio manager</p>
+          <p class="bio">Alex specializes in photo editing and post-production. His eye for detail ensures that every shot is perfected before delivery to clients.</p>
+          <button onclick="showGallery(3)">like </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="studio-work">
+      <h2>Our Studio Work & Photography</h2>
+      <p>At our studio, we specialize in a variety of photography styles, including portraits, events, and commercial photography. Below are some examples of our recent work:</p>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="eddy1.jpg" alt="Studio Photo 1">
+        </div>
+        <div class="gallery-item">
+          <img src="irene1.jpg" alt="Studio Photo 2">
+        </div>
+        <div class="gallery-item">
+          <img src="guen1.jpg" alt="Studio Photo 3">
+        </div>
+        <div class="gallery-item">
+          <img src="photo5.jpg" alt="Studio Photo 3">
+        </div>
+        <div class="gallery-item">
+          <img src="sara1.jpg" alt="Studio Photo 3">
+        </div>
+<a href="portfolio.html"><button type="button" name="button" id="more" >view more </button></a>
+        </div>
+    </section>
+    <section>
+      <div>
+<p>Thank you for choosing C-LOOX PRINTS MEDIA AND WE WISH YOU ALL THE BEST AS YOU MOVE INTO IT </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="social-navbar">
+<p>
+      <ul class="social-icons">
+          <li><a href="https://wa.me/0701344086" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="https://facebook.com/" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://instagram.com/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://tiktok.com/@clooxprints" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://youtube.com/@MultiCharles20" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="https://twitter.com/" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+
+  &copy; 2024 C-looks Print Media.All rights reserved.</p>
+</footer>
+  </main><script type="text/javascript">,
+  more.addEventListener('click', () => {
+    // Redirect to the home page
+    window.location.href = "portfolio.html"; // Update this with the actual home page URL
+  });
+
+
+    document.addEventListener('showGallery(1)', () => {
+      // Define the images for each team member
+      const galleries = [
+        [ // Gallery for John Doe
+          'work1.jpeg',
+          'https://via.placeholder.com/600x400?text=Gallery+2+of+John',
+          'https://via.placeholder.com/600x400?text=Gallery+3+of+John'
+        ],
+        [ // Gallery for Jane Smith
+          'https://via.placeholder.com/600x400?text=Gallery+1+of+Jane',
+          'https://via.placeholder.com/600x400?text=Gallery+2+of+Jane',
+          'https://via.placeholder.com/600x400?text=Gallery+3+of+Jane'
+        ],
+        [ // Gallery for Alex Johnson
+          'https://via.placeholder.com/600x400?text=Gallery+1+of+Alex',
+          'https://via.placeholder.com/600x400?text=Gallery+2+of+Alex',
+          'https://via.placeholder.com/600x400?text=Gallery+3+of+Alex'
+        ],
+        [ // Gallery for Emily Davis
+          'https://via.placeholder.com/600x400?text=Gallery+1+of+Emily',
+          'https://via.placeholder.com/600x400?text=Gallery+2+of+Emily',
+          'https://via.placeholder.com/600x400?text=Gallery+3+of+Emily'
+        ],
+        [ // Gallery for Chris Lee
+          'https://via.placeholder.com/600x400?text=Gallery+1+of+Chris',
+          'https://via.placeholder.com/600x400?text=Gallery+2+of+Chris',
+          'https://via.placeholder.com/600x400?text=Gallery+3+of+Chris'
+        ]
+      ];
+
+      // Create modal container
+      const modal = document.createElement('div');
+      modal.classList.add('modal');
+      modal.innerHTML = `
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-gallery"></div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+
+      const closeButton = modal.querySelector('.close-btn');
+      const modalGallery = modal.querySelector('.modal-gallery');
+
+      // Function to show the modal with images for each team member
+      function showGallery(memberId) {
+        modal.style.display = 'block';
+        modalGallery.innerHTML = ''; // Clear previous images
+
+        galleries[memberId - 1].forEach(imageUrl => {
+          const img = document.createElement('img');
+          img.src = imageUrl;
+          img.alt = `Gallery image of team member ${memberId}`;
+          img.classList.add('modal-image');
+          modalGallery.appendChild(img);
+        });
+      }
+
+      // Close the modal when the user clicks the close button
+      closeButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
+
+      // Close the modal when the user clicks outside of the modal content
+      window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+
+      // Attach event listeners to buttons
+      const buttons = document.querySelectorAll('button');
+      buttons.forEach((button, index) => {
+        button.addEventListener('click', () => showGallery(index + 1)); // Pass team member ID
+      });
+    });
+  </script>
+</body>
+
+</html>

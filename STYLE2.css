@@ -1,0 +1,203 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:sans-serif, serif, 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background-image:url(/images/33.jpg);
+    background-repeat: none;
+    background-size: cover;
+    mix-blend-mode: none;
+    color:white;
+}
+
+/* Header Section */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .logo h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('construction-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+#hero .hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#hero .hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero .btn-primary {
+    background-color: #f4b400;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#hero .btn-primary:hover {
+    background-color: #e1a100;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service {
+    background-image:linear-gradient(70deg,rgb(251, 185, 61), rgb(10, 166, 10));
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    border: 2px solid none;
+    border-radius: 10px 50px 10px 50px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Projects Gallery */
+.projects-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+h2,h3,h4{
+    text-transform: uppercase;
+    text-shadow: 2px 4px 2px greenyellow;
+    font-size: larger;
+}
+.div img{
+    width: 40%;
+    border: 2px solid yellow;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition:all ease-in-out 0.9s;
+    cursor: pointer;
+    margin: 0 auto;
+    gap: 2px;
+}
+.div img:hover
+    {
+        filter: saturate(100%);
+        width: 50%;
+    }
+    .div{
+        width: auto;
+        height:auto;
+    }
+    .copyright{
+        text-align: center;
+    }
+.social-icons{
+    height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  
+}
+.size{
+    height: 20px;
+    width: 20px;
+}
+.social-icons a{
+    text-decoration: none;
+    
+}
+.social-icons img:hover{
+    color: yellow;
+    transition: all ease-in-out 0.5s;
+    filter: saturate(100%);
+    width: 5%;
+    background-color: #e1a100;
+}
+footer{
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+    color: aliceblue;
+    border: 2px solid none;
+    border-radius: 10px 50px 10px 50px;
+}
+          
+
+   #work{
+    height: 100px;
+    width: 200px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+   }

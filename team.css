@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-section {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+    background-image: url(tool6.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+.team-section p {
+  color:#ffffff;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 22%;
+  min-width: 250px;
+}
+.member {
+  font-size: 20px;
+align-content: center;
+text-align: center;
+align-items:
+
+}
+.team-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-member h2 {
+  margin: 10px 0;
+}
+
+.role {
+  font-weight: bold;
+  color: #555;
+}
+
+.bio {
+  font-size: 1rem;
+  color: #777;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.studio-work {
+  margin-top: 50px;
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+
+/* Footer position and styling */
+.social-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Style the list and remove bullets */
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Style the individual icon links */
+.social-icon {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Add hover effect */
+.social-icon:hover {
+    color: #00b0ff; /* Change to any color you like */
+}
+
+/* Customize icons for each platform (optional) */
+.social-icon.whatsapp:hover { color: #25D366; }
+.social-icon.facebook:hover { color: #1877F2; }
+.social-icon.instagram:hover { color: #C13584; }
+.social-icon.tiktok:hover { color: #69C9D0; }
+.social-icon.youtube:hover { color: #FF0000; }
+.social-icon.twitter:hover { color: #1DA1F2; }
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal-image {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 25px;
+  top: 0;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

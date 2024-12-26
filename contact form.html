@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic styling for the contact form and links */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #808080;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    background: transparent;
+    color: #000000;
+}
+
+h1, h2 {
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #000000;
+    background-color: #808080;
+}
+footer {
+  width: 50px;
+  height:18px
+}
+/* Footer position and styling */
+.social-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Style the list and remove bullets */
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Style the individual icon links */
+.social-icon {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Add hover effect */
+.social-icon:hover {
+    color: #00b0ff; /* Change to any color you like */
+}
+
+/* Customize icons for each platform (optional) */
+.social-icon.whatsapp:hover { color: #25D366; }
+.social-icon.facebook:hover { color: #1877F2; }
+.social-icon.instagram:hover { color: #C13584; }
+.social-icon.tiktok:hover { color: #69C9D0; }
+.social-icon.youtube:hover { color: #FF0000; }
+.social-icon.twitter:hover { color: #1DA1F2; }
+
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contact-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-links li {
+    margin-bottom: 10px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message..." rows="5" required></textarea>
+
+            <a href="mailto:primecodecrusader@gmail.com"><button type="submit" >Send Message</button></a>
+        </form>
+
+        <h2>Contact Us via:</h2>
+        <ul class="contact-links">
+            <li><a href="https://wa.me/0701344086" target="_blank">WhatsApp</a></li>
+            <li><a href="https://youtube.com/@MultiCharles20" target="_blank">youtube</a></li>
+            <li><a href="tel:+0701344086">Call Us (Phone)</a></li>
+            <li><a href="https://instagram.com/yourprofile" target="_blank">Instagram</a></li>
+            <li><a href="https://maps.app.goo.gl/qZdytzDZRuR5YToGA" target="_busenga">Find Us on Google Maps</a></li>
+        </ul>
+    </section>
+
+        <p>
+          &copy; 2024 C-looks Print Media.All rights reserved.</p>
+        </footer>
+
+    <script>
+        // Basic form submission prevention to show alert (customize with actual form submission logic if needed)
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your message! We will get back to you soon.');
+});
+
+    </script>
+</body>
+</html>
